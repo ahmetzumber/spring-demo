@@ -11,4 +11,9 @@
 	   <bean id="database" class="springDemo.MySqlCustomerDAL">
 	   
 	   </bean>
+	   
+	   <bean id="service" class="springDemo.CustomerManager">
+	   	<constructor-arg ref="database"></constructor-arg>
+	   
+	   </bean>
 </beans>

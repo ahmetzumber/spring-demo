@@ -1,6 +1,6 @@
 package springDemo;
 
-public class CustomerManager {
+public class CustomerManager implements ICustomerService{
 	
 	private ICustomerDAL customerDAL;
 	
