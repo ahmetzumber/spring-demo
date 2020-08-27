@@ -13,7 +13,7 @@
 	   </bean>
 	   
 	   <bean id="service" class="springDemo.CustomerManager">
-	   	<constructor-arg ref="database"></constructor-arg>
-	   
+	   		<!-- <constructor-arg ref="database">   --> 
+	   		<property name="customerDAL" ref="database"></property>
 	   </bean>
 </beans>
